@@ -1,0 +1,13 @@
+// This.* is the part that usually starts with "This Agreement ...."
+
+$ This_Sec = "This_Sec"
+
+$ This_sec = "This_sec"
+
+
+// Document
+
+### {{This_Sec}}
+
+{{This_sec}}
+

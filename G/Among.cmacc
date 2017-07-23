@@ -1,0 +1,27 @@
+// The Parties division identifies the parties.  It also can identify some other persons (friends) who are important to the contract and mentioned in it, such as subsidiaries, a agent, a broker or insurer:
+
+$ Among_Ti = "Among_Title"
+
+$ Among_Sec = "Among_Section"
+
+$ Among_sec = "Among_section"
+
+// Friends_Div is for documents that need to list other persons, for instance affiliates of one of the parties.  Defaults to null.  
+
+$ Friends_Div = ""
+
+$ Friend_Ti = "Affiliated persons referenced in this Agreement:"
+
+$ Friend_Sec = ""
+
+$ Friend_sec = ""
+
+// Document
+
+## {{Among_Ti}}
+
+### {{Among_Sec}}
+
+{{Among_sec}}
+
+{{Friends_Div}}

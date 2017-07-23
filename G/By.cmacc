@@ -1,0 +1,16 @@
+// By.* is for signature.  It often starts with a statement that the parties adopt the text as their agreement. The default is for two parties.
+
+$ By_Ti = "By_Title"
+
+$ By_Sec = "By_Section"
+
+$ By_sec = "By_sections"
+
+
+// Document
+
+## {{By_Ti}}
+
+### {{By_Sec}}
+
+{{By_sec}}

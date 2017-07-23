@@ -1,0 +1,12 @@
+// Why.* is the Recitals section.  It gives background and objectives. 
+
+$ Why_Ti = "Why_Title"
+
+$ Why_Secs = "Why_Sections"
+
+
+// Document
+
+### {{Why_Ti}}
+
+1.{{Why_Secs}}

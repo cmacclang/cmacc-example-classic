@@ -1,0 +1,14 @@
+// Annex.* is for any Exhibits, Attachments, Schedules or Annexes.  If there are a number of them, you can list them.  
+ 
+$ Annex_Sec = "Annex_Sec"
+
+$ Annex_sec = "Annex_sec"
+
+
+// Document
+
+-----
+
+## {{Annex_Sec}}
+
+{{Annex_sec}}

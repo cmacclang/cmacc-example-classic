@@ -1,0 +1,82 @@
+// This file is presented in roughly the order in which the page is built.  An agreement has eight possible text divisions. The biggest is the list of provisions, called "Sec_Div".
+
+$ P1 = [./_entity.cmacc]
+
+$ P2 = [./_entity.cmacc]
+
+$ P1.Handle = "Party1"
+
+$ P2.Handle = "Party2"
+
+
+// The Head of the agreement has a place for a document number or comment, and a centered heading.  The centered heading has the document name, date, parties.
+
+$ Doc_GUID = "GUID"
+
+$ Doc_Ti = "Document Title"
+
+$ EffectiveDate_YMD = "YY/MM/DD"
+
+
+// The Parties division identifies the parties.  It also can identify some other persons (friends) who are important to the contract and mentioned in it, such as subsidiaries, a agent, a broker or insurer:
+
+$ Among_Div = [./Among.cmacc]
+
+
+// This.* is the part that usually starts with "This Agreement ...."
+
+$ This_Div = [./This.cmacc]
+
+
+// Why.* is the Recitals section.  It gives background and objectives. 
+
+$ Why_Div = [./Why.cmacc]
+
+
+// That.* is the part that often says "The parties therefore ...."
+ 
+$ That_Div = [./That.cmacc]
+
+
+// Sec.* is the sections of the agreement - the principal text.  There is an option for a heading, but that is rare.  We also include a default set of top-level subject matter divisions.  Sec_Div defaults to Sec - which makes it easy to use the large set of paragraph widgets.
+
+$ Sec_Div = [./Sec.cmacc]
+
+
+// By.* is for signature.  It often starts with a statement that the parties adopt the text as their agreement. The default is for two parties.
+
+$ By_Div = [./By.cmacc]
+
+
+// Annex.* is for any Exhibits, Attachments, Schedules or Annexes.  If there are a number of them, you can list them.  
+ 
+$ Annex_Div = [./Annex.cmacc]
+
+
+// The Oxford comma.  Establishing the default as no such comma.  But can override in your documents.
+
+$ q = "</i>"
+
+// Document
+
+
+GUID: {{Doc_GUID}}
+
+# {{Doc_Ti}}
+{{P1.Name_Full}}
+{{P2.Name_Full}}
+Effective_Date: {{EffectiveDate_YMD}}
+
+{{Among_Div}}
+
+{{This_Div}}
+
+{{Why_Div}}
+
+{{That_Div}}
+
+{{Sec_Div}}
+
+{{By_Div}}
+
+{{Annex_Div}}

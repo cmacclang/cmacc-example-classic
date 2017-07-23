@@ -1,0 +1,12 @@
+// Sec.* is the sections of the agreement - the principal text.  There is an option for a heading, but that is rare.  We also include a default set of top-level subject matter divisions.  Sec_Div defaults to Sec - which makes it easy to use the large set of paragraph widgets.
+
+$ Sec = "Section"
+
+$ sec = "section"
+
+
+// Document
+
+### {{Sec}}
+
+{{sec}}
